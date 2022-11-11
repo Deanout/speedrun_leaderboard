@@ -1,0 +1,13 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+  <h1>Speedruns</h1>
+  <div id="speedruns">
+    <% @speedruns.each do |speedrun| %>
+      <%= render speedrun %>
+      <p>
+        <%= link_to "Show this speedrun", speedrun %>
+      </p>
+    <% end %>
+  </div>
+  <%= link_to "New speedrun", new_speedrun_path %>
+</div>

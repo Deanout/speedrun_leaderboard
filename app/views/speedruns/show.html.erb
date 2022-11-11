@@ -1,0 +1,9 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+  <%= render @speedrun %>
+  <div>
+    <%= link_to "Edit this speedrun", edit_speedrun_path(@speedrun) %> |
+    <%= link_to "Back to speedruns", speedruns_path %>
+    <%= button_to "Destroy this speedrun", @speedrun, method: :delete %>
+  </div>
+</div>
